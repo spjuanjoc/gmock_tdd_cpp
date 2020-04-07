@@ -23,7 +23,7 @@ include_directories(test/Module)
 #To compile with coverage
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     message("System name: ${CMAKE_SYSTEM_NAME}")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage ")#-fprofile-arcs -ftest-coverage")
 endif()
 
 add_executable(${PROJECT_NAME} ${SOURCES})

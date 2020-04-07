@@ -1,0 +1,2 @@
+$cd gmock_tdd_cpp/cmake-build-debug/CMakeFiles/gmock_demo3.dir
+$ gcov -d *.gcno
